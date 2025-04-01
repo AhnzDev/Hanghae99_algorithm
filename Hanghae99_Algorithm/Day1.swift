@@ -1,15 +1,13 @@
 //
-//  main.swift
+//  Day1.swift
 //  Hanghae99_Algorithm
 //
-//  Created by Jihoon on 3/31/25.
+//  Created by Jihoon on 4/2/25.
 //
 
 import Foundation
 
-print("Hello, World!")
 
-Day2() // 문자열 분석
 
 
 
@@ -30,28 +28,32 @@ Day2() // 문자열 분석
  출력
  첫째 줄에 패턴을 출력하면 된다.
  */
-//var standardString = ""
-//if let input = readLine() {
-//    let inputCount = Int(input) ?? 0
-//    
-//  
-//    for i in 0 ..< inputCount {
-//        let textInput = readLine() ?? ""
-//        if i == 0 {
-//            standardString = textInput
-//        } else {
-//            if standardString.index(standardString.startIndex, offsetBy: i) == textInput.index(textInput.startIndex, offsetBy: i) {
-//                
-//            } else {
-//                let index = standardString.index(standardString.startIndex, offsetBy: i) // 3번째 문자 (0-based index)
-//                standardString.replaceSubrange(index...index, with: "?") // 원하는 문자로 교체
-//            }
-//        }
-//    }
-//}
-//print(standardString)
+class Day1 {
+    init() {
+        var standardString = ""
+        if let input = readLine() {
+            let inputCount = Int(input) ?? 0
+        
+        
+            for i in 0 ..< inputCount {
+                let textInput = readLine() ?? ""
+                if i == 0 {
+                    standardString = textInput
+                } else {
+                    if standardString.index(standardString.startIndex, offsetBy: i) == textInput.index(textInput.startIndex, offsetBy: i) {
+        
+                    } else {
+                        let index = standardString.index(standardString.startIndex, offsetBy: i) // 3번째 문자 (0-based index)
+                        standardString.replaceSubrange(index...index, with: "?") // 원하는 문자로 교체
+                    }
+                }
+            }
+        }
+        print(standardString)
+    }
+}
 
-
+//MARK: 보너스 문제
 ///*
 // 알파벳 소문자로만 이루어진 단어가 주어진다. 이때, 이 단어가 팰린드롬인지 아닌지 확인하는 프로그램을 작성하시오.
 //
@@ -70,9 +72,7 @@ Day2() // 문자열 분석
 //if let input = readLine() {
 //    // 문자열을 뒤집은 것과 원본을 비교
 //    let isPalindrome = input == String(input.reversed())
-//    
+//
 //    // 결과 출력: 팰린드롬이면 1, 아니면 0
 //    print(isPalindrome ? 1 : 0)
 //}
-
-
