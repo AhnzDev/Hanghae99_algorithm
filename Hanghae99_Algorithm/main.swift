@@ -9,7 +9,7 @@ import Foundation
 
 print("Hello, World!")
 
-Day2() // 문자열 분석
+Day3() // 문자열 분석
 
 
 
