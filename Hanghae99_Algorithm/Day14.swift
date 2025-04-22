@@ -36,9 +36,9 @@ class Day16 {
             
             let wordArray: [String] = wordSet.sorted { first, second in
                 if first.count == second.count {
-                    return first < second
+                    return first < second // 길이가 같으면 사전순
                 }
-                return first.count < second.count
+                return first.count < second.count // 길이가 다르면 길이가 적은 순 
             }
             
             for word in wordArray {

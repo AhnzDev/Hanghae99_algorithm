@@ -10,7 +10,9 @@ import Foundation
 print("Hello, World!")
 
 Day16() // 문자열 분석
+let c = Day17()
 
+c.findTheDistanceValue([4,5,8], [10,9,1,8], 2)
 
 
 /*
